@@ -1,0 +1,7 @@
+com\codoacodo\connection\AdministradorDeConexiones.class
+com\codoacodo\dao\Conexion.class
+com\codoacodo\dao\OradorDAO.class
+com\codoacodo\model\Persona.class
+com\codoacodo\model\Orador.class
+com\codoacodo\controllers\ListadoController.class
+com\codoacodo\controllers\EditarController.class
