@@ -19,16 +19,16 @@ public class EditarController extends HttpServlet {
 		
 		String id = req.getParameter("id");
 		
-		//Crear ProductoDAO
+		//Crear OradorDAO
 		OradorDAO dao = new OradorDAO();
 		
 		//invocar el metodo obtenerPorId(id)
-		Orador oradFromDb = dao.obtenerPorId(Long.parseLong(id));
+		Orador oradFromDb = dao.obtenerPorId(Long.valueOf(id));
 		
 		//guardar en el request el producto
 		req.setAttribute("orador", oradFromDb);
 		
-		//ir a la siguiente pagina
+		//siguiente pagina
 		getServletContext().getRequestDispatcher("/editar.jsp").forward(req, resp);
 	}
 	
@@ -38,17 +38,21 @@ public class EditarController extends HttpServlet {
 		String nombre = req.getParameter("nombre");
 		String apellido = req.getParameter("apellido");
 		String mail = req.getParameter("mail");
-		String tema = req.getParameter("tema");
+		String tema = req.getParameter("tema"); 
+                
+                
+                //AGREGAR ID
+                String id = req.getParameter("id");
 		
 		
-		//Crear ProductoDAO
+		//Crear DAO
 		OradorDAO dao = new OradorDAO();
 		
-		//invocar actualizarProducto(params)
-                Orador oraActualizado = new Orador(nombre, apellido, mail, tema);
+		//invocar actualizarOrador(params)
+                Orador oraActualizado = new Orador(Long.valueOf(id), nombre, apellido, mail, tema);
 		dao.actualizarOrador(oraActualizado);
 
-		//ir a la siguiente pagina
+		//siguiente pagina
 		resp.sendRedirect(req.getContextPath()+"/api/ListadoController");
 	}
 }

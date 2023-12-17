@@ -10,7 +10,7 @@
     </head>
 	
     <body>
-        <!-- ACA VA EL NAVBAR  -->
+        
         <%@include file="navbar.jsp" %>
         <main>
             <div class="container">

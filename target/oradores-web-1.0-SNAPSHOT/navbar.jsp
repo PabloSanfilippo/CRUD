@@ -1,6 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="<%=request.getContextPath()%>">Codo a Codo</a>
+    <a class="navbar-brand" href="<%=request.getContextPath()%>">
+        <img src="media/codoacodo.png" alt="Avatar Logo" style="width:120px;">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,12 +15,7 @@
           <a class="nav-link" href="<%=request.getContextPath()%>/api/ListadoController">Listado</a>
         </li>
       </ul>
-      <form class="d-flex"	
-      	action="<%=request.getContextPath()%>/api/BuscarController" 
-      	method="get">
-        <input name="clave" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
+
     </div>
   </div>
 </nav>

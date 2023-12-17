@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import com.codoacodo.model.Orador;
 import java.sql.Timestamp;
-import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,7 +39,7 @@ public class OradorDAO {
             
             while(rs.next()) {
                 
-                int idOrador = rs.getInt(1);
+                Long idOrador = rs.getLong(1);
                 String nombre = rs.getString(2);
                 String apellido = rs.getString(3);
                 String mail = rs.getString(4);
@@ -165,18 +164,18 @@ public class OradorDAO {
 
                 if(rs.next()) {//si existe, hay uno solo
                         // rs > sacando los datos
-                        int idOrador = rs.getInt(1);
+                        Long idOrador = rs.getLong(1);
                         String nombre = rs.getString(2);
                         String apellido = rs.getString(3);
                         String mail = rs.getString(4);
                         String tema = rs.getString(5);
                         Timestamp fechaAlta = rs.getTimestamp(6);
 
-                        //campos crear un objeto????
+                        
                         oradFromDb = new Orador(idOrador,nombre,apellido,mail,tema,fechaAlta);
                 }			
 		} catch (SQLException e) {
-			// ERRORES
+			
 			e.printStackTrace();
 		}
 		return oradFromDb;

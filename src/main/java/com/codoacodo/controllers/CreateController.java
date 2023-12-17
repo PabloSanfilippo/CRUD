@@ -12,8 +12,7 @@ import com.codoacodo.dao.OradorDAO;
 import com.codoacodo.model.Orador;
 import java.sql.SQLException;
 
-/*HERENCIA*/
-//Create Controller es hijo de :
+
 @WebServlet("/CreateController")
 public class CreateController extends HttpServlet {
 
@@ -26,18 +25,18 @@ public class CreateController extends HttpServlet {
 		String tema = req.getParameter("tema");
 		
 		
-		//crear ProductoDAO
+		//crear OradaorDao
 		OradorDAO dao = new OradorDAO();
 		Orador oraNuevo = new Orador (nombre, apellido, mail, tema);
-		//ejecutar el metodo crearProducto(parametros...)
+		//ejecutar  insertarOrador
 		try {
                 dao.insertarOrador(oraNuevo);
                 } catch(SQLException | ClassNotFoundException | InstantiationException | IllegalAccessException ex ){
                     ex.printStackTrace(System.out);
                 }
 		
-		//ctrl+shit+o
-		//ir a la siguiente pagina
+		
+		//sig.pag.
 		resp.sendRedirect(req.getContextPath()+"/api/ListadoController");
 	}
 }

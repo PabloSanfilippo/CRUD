@@ -6,8 +6,11 @@
 	</head>
 	
 	<body>
-            <!-- ACA VA EL NAVBAR  -->
-            <%@include file="navbar.jsp" %>		
+            
+            
+            <%@include file="navbar.jsp" %>
+            
+            <div class="container-fluid bg-secondary">
             <main class="border border-primary rounded-4 text-center">
                 <div class="container">
                     <section>
@@ -15,6 +18,7 @@
                     </section>
                 </div>
             </main>
+            </div>
             <%@include file="footer.jsp" %>
 	</body>	
 </html>

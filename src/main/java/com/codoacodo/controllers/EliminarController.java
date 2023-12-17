@@ -1,10 +1,6 @@
 package com.codoacodo.controllers;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.Statement;
-
-import com.codoacodo.connection.AdministradorDeConexiones;
 import com.codoacodo.dao.OradorDAO;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

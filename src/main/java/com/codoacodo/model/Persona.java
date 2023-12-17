@@ -2,12 +2,11 @@ package com.codoacodo.model;
 
 /**
  *
- * @author Nicolas
+ * @author Pablo
  */
 public class Persona {
     
-    protected long id;
-    
+    protected Long id;
     protected String nombre;
     protected String apellido;
     protected String mail;
@@ -23,13 +22,13 @@ public class Persona {
         this.apellido = a;
     }
     
-    public Persona(long i, String n, String a) {
+    public Persona(Long i, String n, String a) {
         this.id = i;
         this.nombre = n;
         this.apellido = a;
     }
     
-    public Persona(long i, String n, String a, String m) {
+    public Persona(Long i, String n, String a, String m) {
         this.id = i;
         this.nombre = n;
         this.apellido = a;
@@ -43,7 +42,7 @@ public class Persona {
     }
     
     //setter de id
-    public void setId(long i) {
+    public void setId(Long i) {
         this.id = i;
     }
     
