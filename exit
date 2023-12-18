@@ -1,0 +1,42 @@
+[33mcommit 10383f883cb7bd9df3f8944cc0fa0f8b6543cf2b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: d65b075 feb6e9e
+Author: Pablo Sanfilippo <pablosanfilippo89@gmail.com>
+Date:   Mon Dec 18 00:10:05 2023 -0300
+
+    Merge branch 'master' of https://github.com/PabloSanfilippo/CRUD
+
+[33mcommit d65b075204a146b237fa3595fa121e416c349cbe[m
+Author: Pablo Sanfilippo <pablosanfilippo89@gmail.com>
+Date:   Mon Dec 18 00:07:50 2023 -0300
+
+    Modificacion del front
+
+[33mcommit feb6e9ea81ad1ac7804cf4fe96d1cf8947826841[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Pablo Sanfilippo <138275463+PabloSanfilippo@users.noreply.github.com>
+Date:   Sun Dec 17 18:34:36 2023 -0300
+
+    Create README.md
+
+[33mcommit 967382a342f5c1e70d6c7332a882d2fe0f78bcc8[m
+Author: Pablo Sanfilippo <138275463+PabloSanfilippo@users.noreply.github.com>
+Date:   Sun Dec 17 18:30:53 2023 -0300
+
+    DB backup
+
+[33mcommit 9ceeab8a581b3a39397e2513962ac34ab4ff91ab[m
+Author: Pablo Sanfilippo <pablosanfilippo89@gmail.com>
+Date:   Sun Dec 17 18:22:24 2023 -0300
+
+    solucionada la funcionalidad de editar orador
+
+[33mcommit 1fa4ca95436f01b18e3a97b848b39b61b03cc927[m
+Author: Pablo Sanfilippo <pablosanfilippo89@gmail.com>
+Date:   Fri Dec 15 16:17:58 2023 -0300
+
+    actualizacion del war
+
+[33mcommit d7c7b661851a68e81e714867e8c826499e1b31d6[m
+Author: Pablo Sanfilippo <pablosanfilippo89@gmail.com>
+Date:   Fri Dec 15 15:23:00 2023 -0300
+
+    crud basico, falta front y update
