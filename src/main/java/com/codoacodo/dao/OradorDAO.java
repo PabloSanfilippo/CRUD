@@ -1,6 +1,6 @@
 package com.codoacodo.dao;
 
-import static com.codoacodo.dao.Conexion.*;
+import static com.codoacodo.connection.Conexion.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
