@@ -9,7 +9,7 @@
         </title>	
     </head>
 	
-    <body>
+    <body class="bg-secondary">
         
         <%@include file="navbar.jsp" %>
         <main>
@@ -17,7 +17,7 @@
                 
                 <section class="bg-secondary-subtle border rounded-5 m-4 px-2 pt-2 pb-3 col-12 mx-auto text-center">
       <h2 class="my-4">Listado</h2>
-      <table class="table table-sm table-striped table-hover border border-success">
+      <table class="table table-sm table-striped table-hover border border-warning">
                       <thead>
                         <tr>
                           <th scope="col">ID</th>

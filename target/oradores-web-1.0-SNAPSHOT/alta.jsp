@@ -9,13 +9,13 @@
             <%@include file="head.jsp" %>
     </head>
 
-    <body>
+    <body class="bg-secondary">
         <main>
             <!-- ACA VA EL NAVBAR  -->
             <%@include file="navbar.jsp" %>
             <div class="container">
-                <section class="border border-primary rounded-4 col-6 mx-auto text-center" style="background-color: aquamarine">
-                    <h1 class="text-center my-4">Alta</h1>
+                <section class="bg-dark rounded-4 col-6 mx-auto text-center">
+                    <h1 class="text-center my-4" style="color: yellow">Alta</h1>
                     <!--  JSP -->
                     <form method="post"
                         action="<%=request.getContextPath()%>/CreateController">
@@ -31,7 +31,7 @@
                         <div class="my-3 mx-3">
                           <input name="tema" type="text" class="form-control" id="codigoTextarea" maxlength="50" placeholder="Tema">
                         </div>
-                        <button class="btn btn-primary my-3">
+                        <button class="btn btn-secondary my-3">
                             Dar de alta
                         </button>
                     </form>
